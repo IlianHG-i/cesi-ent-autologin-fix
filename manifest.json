@@ -56,7 +56,7 @@
       "run_at": "document_end"
    }, {
       "js": [ "js/ent-ad.user.js" ],
-      "matches": [ "https://sts.viacesi.fr/adfs/ls/" ],
+      "matches": [ "https://sts.viacesi.fr/adfs/ls/*" ],
       "run_at": "document_end"
    } ],
    "content_security_policy": {
@@ -74,7 +74,7 @@
    "name": "Thème noir + Autologin ENT CESI",
    "permissions": [ "storage" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "4.8.5",
+   "version": "4.8.6",
    "web_accessible_resources": [ {
       "matches": [ "\u003Call_urls>" ],
       "resources": [ "icon/*.png", "images/*.png", "icons/*.png", "css/*.css" ]
