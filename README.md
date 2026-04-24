@@ -11,16 +11,47 @@ L'extension d'origine ne gérait plus cette étape depuis la refonte du portail 
 - Auto-login sur Moodle : `moodle-ingenieurs.cesi.fr`, `moodle.cesi.fr`, `moodle-examens.cesi.fr`
 - Thème noir optionnel sur l'ENT et Moodle
 
-## Installation (mode développeur)
+## Installation
 
-### Chrome / Edge / Brave
-1. `chrome://extensions`
-2. Activer le **Mode développeur**
-3. **Charger l'extension non empaquetée** → sélectionner le dossier du repo
+### 1. Récupérer le code
 
-### Firefox
-1. `about:debugging#/runtime/this-firefox`
-2. **Charger un module complémentaire temporaire** → sélectionner `manifest.json`
+Deux options :
+
+**Option A — Télécharger le ZIP** (plus simple)
+1. Cliquer sur le bouton vert **Code** en haut de la page GitHub
+2. **Download ZIP**
+3. Extraire l'archive où tu veux (ex. `Documents/cesi-ent-autologin-fix`)
+
+**Option B — Cloner avec git**
+```bash
+git clone https://github.com/IlianHG-i/cesi-ent-autologin-fix.git
+```
+
+### 2. Charger l'extension dans le navigateur
+
+#### Chrome / Edge / Brave / Opera
+1. Ouvrir `chrome://extensions` (ou `edge://extensions`, `brave://extensions`) dans la barre d'adresse
+2. Activer le **Mode développeur** (toggle en haut à droite)
+3. Cliquer sur **Charger l'extension non empaquetée**
+4. Sélectionner le dossier extrait/cloné (**celui qui contient `manifest.json`**, pas un dossier parent)
+5. L'icône de l'extension apparaît dans la barre d'outils — la fixer si besoin (punaise 📌)
+
+#### Firefox
+> ⚠️ En mode "temporaire", l'extension sera désinstallée à la fermeture de Firefox. Pour la garder, il faut l'installer depuis un fichier `.xpi` signé.
+1. Ouvrir `about:debugging#/runtime/this-firefox`
+2. Cliquer sur **Charger un module complémentaire temporaire…**
+3. Sélectionner le fichier `manifest.json` dans le dossier du repo
+
+### 3. Vérifier que ça fonctionne
+
+1. Cliquer sur l'icône de l'extension, saisir email `prénom.nom@viacesi.fr` + mot de passe, **Sauvegarder**
+2. Aller sur [https://ent.cesi.fr](https://ent.cesi.fr) — tu devrais être connecté automatiquement
+
+### Mise à jour
+
+Pour récupérer les dernières modifs :
+- **ZIP** : retélécharger, remplacer le dossier, puis cliquer sur ↻ (recharger) dans `chrome://extensions`
+- **Git** : `git pull` dans le dossier, puis ↻ dans `chrome://extensions`
 
 ## Configuration
 
