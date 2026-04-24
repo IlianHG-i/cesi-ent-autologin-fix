@@ -1,0 +1,243 @@
+.top-bar {
+    background: #27251f !important;
+}
+
+.search-courses-section {
+    background: #27251f !important;
+}
+
+body {
+    background-color: rgb(51, 51, 51) !important;
+    color: #cccccc !important;
+}
+
+.branding {
+    background: rgb(51, 51, 51) !important;
+}
+
+.hero-slider-wrapper {
+    height: 250px !important;
+    background: #353e4e !important;
+}
+
+.hero-slider-mask {
+    height: 250px !important;
+}
+
+.hero-section {
+    height: 250px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #cccccc !important;
+}
+
+.categories-section .item-inner {
+    background: rgb(68, 68, 68) !important;
+}
+
+#page-footer .footer-bottom-bar,
+#page-footer .page-footer-inner {
+    background: #27251f !important;
+}
+
+.branding .main-nav .nav-link {
+    color: #cccccc !important;
+}
+
+.branding .main-nav .dropdown-menu {
+    background: rgb(68, 68, 68) !important;
+}
+
+.branding .main-nav .dropdown-menu a {
+    color: #cccccc !important;
+}
+
+.page-header .utilities .usermenu .dropdown-menu {
+    background: rgb(68, 68, 68) !important;
+    color: #cccccc !important;
+}
+
+.page-header .utilities .usermenu .dropdown-item {
+    color: #cccccc !important;
+}
+
+.dropdown-divider {
+    background: rgb(68, 68, 68) !important;
+}
+
+.page-header .utilities .usermenu .dropdown-item:hover,
+.page-header .utilities .usermenu .dropdown-item:focus {
+    background: rgb(51, 51, 51) !important;
+}
+
+.search-courses-section .search-input {
+    background: rgb(68, 68, 68) !important;
+}
+
+.search-courses-section .search-btn {
+    background: rgb(51, 51, 51) !important;
+}
+
+#nav-drawer {
+    background: rgb(51, 51, 51) !important;
+}
+
+#nav-drawer .list-group-item {
+    color: #cccccc !important;
+}
+
+#nav-drawer .list-group-item:hover {
+    background: rgb(68, 68, 68) !important;
+    color: #cccccc !important;
+}
+
+#nav-drawer .list-group-item.active {
+    background: rgb(68, 68, 68) !important;
+    color: #cccccc !important;
+}
+
+.card {
+    background-color: rgb(51, 51, 51) !important;
+}
+
+#page-course-index-category .categoryname a {
+    color: #cccccc !important;
+}
+
+#coursesearch {
+    background-color: rgb(51, 51, 51) !important;
+    color: #cccccc !important;
+}
+
+#coursesearch #shortsearchbox,
+#coursesearch #coursesearchbox {
+    background: rgb(68, 68, 68) !important;
+    color: #cccccc !important;
+}
+
+.custom-select {
+    background: rgb(68, 68, 68) !important;
+    color: #cccccc !important;
+}
+
+a.btn-secondary,
+.btn-secondary,
+input.btn-secondary,
+a.btn-default,
+.btn-default {
+    background: rgb(68, 68, 68) !important;
+    color: #cccccc !important;
+}
+
+a.btn-secondary:hover,
+.btn-secondary:hover,
+input.btn-secondary:hover,
+a.btn-default:hover,
+.btn-default:hover,
+a.btn-secondary:focus,
+.btn-secondary:focus,
+input.btn-secondary:focus,
+a.btn-default:focus,
+.btn-default:focus,
+a.btn-secondary.hover,
+.btn-secondary.hover,
+input.btn-secondary.hover,
+a.btn-default.hover,
+.btn-default.hover,
+a.btn-secondary.focus,
+.btn-secondary.focus,
+input.btn-secondary.focus,
+a.btn-default.focus,
+.btn-default.focus {
+    background: rgb(68, 68, 68) !important;
+    color: #cccccc !important;
+}
+
+.theme-course-item {
+    background: rgb(68, 68, 68) !important;
+    color: #cccccc !important;
+}
+
+.theme-course-item .course-title a {
+    color: #cccccc !important;
+}
+
+.course-content .sectionname a {
+    color: #cccccc !important;
+}
+
+section.part {
+    background-color: rgb(51, 51, 51) !important;
+    color: #cccccc !important;
+}
+
+#header>#title {
+    background-color: rgb(51, 51, 51) !important;
+    color: #cccccc !important;
+}
+
+.txt_ili>p,
+.txt_oli>p {
+    color: #cccccc !important;
+}
+
+article.collapsed>a {
+    color: #eeeeee !important;
+}
+
+#outSec {
+    border-top: 1px solid rgb(68, 68, 68) !important;
+    background-color: rgb(68, 68, 68) !important;
+    color: rgb(51, 51, 51) !important;
+}
+
+#outSec ul li a {
+    color: #cccccc !important;
+}
+
+#outSec ul li a.sel_yes {
+    border-bottom: 3px solid #cccccc !important;
+}
+
+.slide-1 {
+    background-image: url(https://axintercampus.fr/memes/memeprincipal.png) !important;
+    background-position: center 20% !important;
+    background-size: 26% !important;
+}
+
+.pagelayout-frontpage .sitetopic.generalbox {
+    background: #444 !important;
+}
+
+.top-bar .mega-dropdown-menu .nav-link {
+    color: #888888 !important;
+}
+
+.cta-section {
+    background: #27251f !important;
+    background-image: !important;
+}
+
+a.theme-btn-primary,
+.theme-btn-primary {
+    background: #333333 !important;
+    border: 2px solid #27251f !important;
+}
+
+.dropdown-menu {
+    background: #333 !important;
+}
+
+.block-theme-widget .theme-cards .card-footer {
+    background: #333333 !important;
+}
+
+.course-content ul.topics li.section .content, .course-content ul.weeks li.section .content {
+    background: #333333 !important;
+}

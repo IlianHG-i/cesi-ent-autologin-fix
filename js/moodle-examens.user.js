@@ -1,0 +1,1 @@
+window.location = "https://moodle-ingenieurs.cesi.fr/auth/mnet/jump.php?hostwwwroot=https%3A%2F%2Fmoodle-examens.cesi.fr&wantsurl&remoteurl=1";

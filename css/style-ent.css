@@ -1,0 +1,215 @@
+.cas__contenu h2 {
+    color: #000000
+}
+
+.cas__contenu .appconnexion .submit {
+    background: #000000
+}
+
+.hautDePage__logo {
+    background-color: #555555 !important;
+}
+
+header {
+    background-color: #333333 !important;
+}
+
+.js #compte .plier-deplier__bouton {
+    color: #cccccc !important;
+}
+
+#page {
+    background: #444444 !important;
+}
+
+body {
+    background: #666666 !important;
+    color: #cccccc !important;
+}
+
+nav {
+    background: #666666 !important;
+}
+
+.sidebar-navigation .item .sidebar-lien {
+    color: #cccccc !important;
+}
+
+.sous-item .item a {
+    color: #cccccc !important;
+}
+
+.accueil .accueil__carte__info.paragraphe--2,
+.ficheaccueil .accueil__carte__info.paragraphe--2 {
+    background: #666666 !important;
+}
+
+.paragraphe--2 {
+    background: #666666 !important;
+    color: #cccccc !important;
+}
+
+.accueil .accueil__carte__info.paragraphe--2 .emploiDuTemps__lien,
+.ficheaccueil .accueil__carte__info.paragraphe--2 .emploiDuTemps__lien {
+    background: #666666 !important;
+}
+
+.accueil .accueil__carte__info.paragraphe--2 a,
+.ficheaccueil .accueil__carte__info.paragraphe--2 a {
+    color: #cccccc !important;
+}
+
+.js .plier-deplier__bouton .icon {
+    color: #cccccc !important;
+}
+
+.js #connexion .plier-deplier__contenu ul li a,
+.js #acces-directs .plier-deplier__contenu ul li a,
+.js #notification .plier-deplier__contenu ul li a,
+.js .notification-mails .plier-deplier__contenu ul li a,
+.js #compte .plier-deplier__contenu ul li a {
+    background: #666666 !important;
+    color: #cccccc !important;
+}
+
+.js #connexion .plier-deplier__contenu,
+.js #acces-directs .plier-deplier__contenu,
+.js #notification .plier-deplier__contenu,
+.js .notification-mails .plier-deplier__contenu,
+.js #compte .plier-deplier__contenu {
+    background: #555555 !important;
+}
+
+.accueil .accueil__carte__info,
+.ficheaccueil .accueil__carte__info {
+    background: #666666 !important;
+    color: #cccccc !important;
+}
+
+a:hover,
+.a:hover {
+    color: #cccccc !important;
+}
+
+a,
+.a {
+    color: #cccccc !important;
+}
+
+.accueil .accueil__carte__info .emploiDuTemps__lien,
+.accueil .accueil__carte__info .actualiteCard__lien,
+.accueil .accueil__carte__info .card__lien,
+.ficheaccueil .accueil__carte__info .emploiDuTemps__lien,
+.ficheaccueil .accueil__carte__info .actualiteCard__lien,
+.ficheaccueil .accueil__carte__info .card__lien {
+    background: #666666 !important;
+}
+
+ul.objets.notification li.avec_vignette,
+ul.notification#liste_resultats li.avec_vignette,
+ul.objets.notification li .vignette_deco2,
+ul.notification#liste_resultats li .vignette_deco2 {
+    background: #666666 !important;
+}
+
+.accueil .accueil__carte__info.widget li a:hover,
+.accueil .accueil__carte__info.widget li a:focus,
+.ficheaccueil .accueil__carte__info.widget li a:hover,
+.ficheaccueil .accueil__carte__info.widget li a:focus {
+    background: #666666 !important;
+}
+
+.trombinoscope__information,
+.trombinoscope__carte,
+.trombinoscope__carte__avatar {
+    background: #555555 !important;
+    color: #cccccc !important;
+}
+
+select:focus,
+select:active,
+textarea:focus,
+textarea:active,
+input[type="submit"]:focus,
+input[type="submit"]:active,
+input[type="reset"]:focus,
+input[type="reset"]:active,
+input[type="button"]:focus,
+input[type="button"]:active,
+input[type="password"]:focus,
+input[type="password"]:active,
+input[type="text"]:focus,
+input[type="text"]:active,
+input[type="search"]:focus,
+input[type="search"]:active,
+input[type="email"]:focus,
+input[type="email"]:active,
+input[readonly]:focus,
+input[readonly]:active,
+button:focus,
+button:active,
+.button:focus,
+.js .plier-deplier__bouton:focus,
+.button:active,
+.js .plier-deplier__bouton:active {
+    border-color: #666666 !important;
+}
+
+#sans_encadres {
+    background: #444444 !important;
+    color: #cccccc !important;
+}
+
+h2:after,
+.h2:after,
+.no-js #connexion button.plier-deplier__bouton:after,
+.no-js #acces-directs button.plier-deplier__bouton:after,
+.no-js #versions button.plier-deplier__bouton:after {
+    background: #444444 !important;
+}
+
+.fc-view {
+    background: #666666 !important;
+    color: #cccccc !important;
+}
+
+.fc-unthemed th,
+.fc-unthemed td,
+.fc-unthemed thead,
+.fc-unthemed tbody,
+.fc-unthemed .fc-divider,
+.fc-unthemed .fc-row,
+.fc-unthemed .fc-popover {
+    border-color: #666666 !important;
+}
+
+.semestres ul li {
+    background: #666666 !important;
+    color: #cccccc !important;
+}
+
+::selection {
+    background: #666666 !important;
+    color: #cccccc !important;
+}
+
+.personne__entete {
+    background: #666666 !important;
+    color: #cccccc !important;
+}
+
+.accordeon .accordeon__titre {
+    border-color: #444444 !important;
+    background: #444444 !important;
+    color: #cccccc !important;
+}
+
+ul.objets.notification li .vignette_deco .icon,
+ul.notification#liste_resultats li .vignette_deco .icon {
+    color: #444444 !important;
+}
+
+.ged {
+    position: relative;
+    background-color: #666666;
+}
