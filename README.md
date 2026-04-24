@@ -46,10 +46,8 @@ Les identifiants sont stockés dans `chrome.storage.sync` (local au navigateur /
 
 `4.8.5` — ajout du support `ent.cesi.fr/identification/wayf`.
 
-## Licence
+## Crédits & statut
 
-MIT — voir [LICENSE](LICENSE).
+Ce dépôt est **uniquement un fix non-officiel** de l'extension originale *Thème noir + Autologin ENT CESI* de Hugo ([hugodevland.fr](https://www.hugodevland.fr/)). Je n'ai aucun droit sur l'œuvre originale ; ce patch est proposé gratuitement à titre de dépannage pour les utilisateurs bloqués par la nouvelle page d'identification CESI. Tous les droits restent la propriété de l'auteur original.
 
-## Crédits
-
-Basé sur l'extension originale *Thème noir + Autologin ENT CESI* de Hugo.
+Si l'auteur original souhaite récupérer / intégrer ce fix ou demander son retrait, qu'il n'hésite pas à ouvrir une issue.
