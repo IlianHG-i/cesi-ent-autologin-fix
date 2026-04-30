@@ -1,7 +1,12 @@
 {
   "addons": {
     "cesi-ent-autologin-fix@ilianhg.local": {
-      "updates": []
+      "updates": [
+        {
+          "version": "4.8.8",
+          "update_link": "https://github.com/IlianHG-i/cesi-ent-autologin-fix/releases/download/v4.8.8/cesi-ent-autologin-fix-v4.8.8.xpi"
+        }
+      ]
     }
   }
 }
