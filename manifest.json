@@ -4,7 +4,8 @@
    },
    "author": "Hugo",
    "background": {
-      "service_worker": "js/start.js"
+      "service_worker": "js/start.js",
+      "scripts": [ "js/start.js" ]
    },
    "browser_specific_settings": {
       "gecko": {
@@ -34,7 +35,7 @@
       "matches": [ "https://wayf.cesi.fr/*", "https://sts.viacesi.fr/*", "https://ent.cesi.fr/*" ],
       "run_at": "document_start"
    }, {
-      "excludes_matches": [ "https://wayf.cesi.fr/login*client_name*" ],
+      "exclude_matches": [ "https://wayf.cesi.fr/login*client_name*" ],
       "js": [ "js/ent.user.js" ],
       "matches": [ "https://wayf.cesi.fr/login*service*" ],
       "run_at": "document_end"
@@ -69,12 +70,10 @@
       "32": "icons/icon_x32.png",
       "48": "icons/icon_x48.png"
    },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgss6kANsdid2a2aAlK04lqbmXOUeAMKYCMlyIYY1ZxWW15Mq7HhIhX5w7Sae3eJT9X33rykleAAtNrVf+5RIFAyCV+T2chvUID2i6W+4beOyIBbGe4+JsfcZB5vZbwySvkLIivUNvUvkvLu+l6spPZDtBui2vQSJWO3n8vGRMF5Q9aqFK1HOiYlLp969rByKjHjxw9G1fu505Sh9GtxKugR2TKMSFxlpdEKnX2rNTI0VD/otatE5QhVIbuT7S761DhrOqueKKX957FmpMpBa6z4s1XM6MpZf1dyZnoGs8tz3tXb2+4BrFT+b3a/cyH+pROEWcVgAbFTlzIT4Va4nUwIDAQAB",
    "manifest_version": 3,
    "name": "Thème noir + Autologin ENT CESI",
    "permissions": [ "storage" ],
-   "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "4.8.6",
+   "version": "4.8.7",
    "web_accessible_resources": [ {
       "matches": [ "\u003Call_urls>" ],
       "resources": [ "icon/*.png", "images/*.png", "icons/*.png", "css/*.css" ]
