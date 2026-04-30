@@ -9,9 +9,9 @@
    },
    "browser_specific_settings": {
       "gecko": {
-         "id": "{2824d9d9-b136-4801-b15f-24f6177be220}",
+         "id": "cesi-ent-autologin-fix@ilianhg.local",
          "strict_min_version": "109.0",
-         "update_url": "https://www.hugodevland.fr/cesi-ent-autologin/updates.json"
+         "update_url": "https://raw.githubusercontent.com/IlianHG-i/cesi-ent-autologin-fix/main/updates.json"
       }
    },
    "content_scripts": [ {
@@ -73,7 +73,7 @@
    "manifest_version": 3,
    "name": "Thème noir + Autologin ENT CESI",
    "permissions": [ "storage" ],
-   "version": "4.8.7",
+   "version": "4.8.8",
    "web_accessible_resources": [ {
       "matches": [ "\u003Call_urls>" ],
       "resources": [ "icon/*.png", "images/*.png", "icons/*.png", "css/*.css" ]

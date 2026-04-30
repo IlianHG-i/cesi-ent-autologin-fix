@@ -1,0 +1,93 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract version from tag
+        id: version
+        run: echo "version=${GITHUB_REF#refs/tags/v}" >> "$GITHUB_OUTPUT"
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install web-ext
+        run: npm install -g web-ext
+
+      - name: Sign extension (Firefox)
+        env:
+          AMO_JWT_ISSUER: ${{ secrets.AMO_JWT_ISSUER }}
+          AMO_JWT_SECRET: ${{ secrets.AMO_JWT_SECRET }}
+        run: |
+          web-ext sign \
+            --api-key="$AMO_JWT_ISSUER" \
+            --api-secret="$AMO_JWT_SECRET" \
+            --channel=unlisted \
+            --artifacts-dir=./web-ext-artifacts \
+            --ignore-files=".github/**" "updates.json" "README.md" ".gitignore" "*.zip"
+
+      - name: Rename xpi
+        run: |
+          XPI=$(ls web-ext-artifacts/*.xpi | head -n1)
+          mv "$XPI" "web-ext-artifacts/cesi-ent-autologin-fix-v${{ steps.version.outputs.version }}.xpi"
+
+      - name: Build Chrome zip
+        run: |
+          zip -rq "cesi-ent-autologin-fix-v${{ steps.version.outputs.version }}.zip" . \
+            -x "*.git*" "*.DS_Store" "node_modules/*" "web-ext-artifacts/*" "*.zip" "updates.json" ".github/*"
+
+      - name: Update updates.json
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          XPI_URL="https://github.com/${{ github.repository }}/releases/download/v${VERSION}/cesi-ent-autologin-fix-v${VERSION}.xpi"
+          cat > updates.json <<EOF
+          {
+            "addons": {
+              "cesi-ent-autologin-fix@ilianhg.local": {
+                "updates": [
+                  {
+                    "version": "${VERSION}",
+                    "update_link": "${XPI_URL}"
+                  }
+                ]
+              }
+            }
+          }
+          EOF
+
+      - name: Commit updates.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add updates.json
+          if git diff --staged --quiet; then
+            echo "updates.json unchanged"
+          else
+            git commit -m "chore: bump updates.json to v${{ steps.version.outputs.version }}"
+            git push origin main
+          fi
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            web-ext-artifacts/cesi-ent-autologin-fix-v${{ steps.version.outputs.version }}.xpi
+            cesi-ent-autologin-fix-v${{ steps.version.outputs.version }}.zip
+          generate_release_notes: true
